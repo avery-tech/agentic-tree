@@ -6,7 +6,16 @@ Product versions are independent of the supported Harness version. All releases 
 
 Nothing yet. The next work starts here.
 
+- Documentation only, after the 0.4.2 publication: README, `TRADEMARK.md` and this changelog were updated. No code change; `src/`, `tests/`, `locale/` and `cordis.patch.yml` are untouched.
+
 ## 0.4.2 — 2026-10-07
+
+### Release status
+
+Published on **2026-10-07** as the **Public Preview** pre-release on GitHub Releases:
+[v0.4.2 — Public Preview](https://github.com/avery-tech/agentic-tree/releases/tag/v0.4.2), tag `v0.4.2` at `1af3096`. Verified compatibility: **DeepSeek Harness 0.2.0-rc.2 only**; other Harness versions are not verified. The independent installation check of this release is still pending. The product page at https://layerpx.com/agentic-tree remains planned.
+
+### Preparation record (written before publication)
 
 Brand rules and release preparation. **No behaviour change**: `src/`, `tests/`, `locale/` and `cordis.patch.yml` are untouched, and this version has not been published. Its verification scope is the automated suite and the packaging checks below, on **DeepSeek Harness 0.2.0-rc.2** only; the real-work acceptance of the views remains pending and is not claimed here.
 

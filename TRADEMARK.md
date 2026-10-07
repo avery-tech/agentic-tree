@@ -19,14 +19,19 @@ who also holds the copyright in the code of this repository.
 The official version is the build released by Vitaly Averyanov and distributed from his own channels.
 AI-generated or third-party builds are never the official version, even when they carry its name.
 
-The official distribution channel is **planned** and not created yet:
+The official channels are:
 
-- Repository — **planned**: https://github.com/avery-tech/agentic-tree
-- Product page — **planned**: https://layerpx.com/agentic-tree
+- Repository — **live**: https://github.com/avery-tech/agentic-tree. Official releases are published on
+  its Releases page; the first is
+  [v0.4.2 — Public Preview](https://github.com/avery-tech/agentic-tree/releases/tag/v0.4.2), published
+  2026-10-07.
+- Product page — **planned**: https://layerpx.com/agentic-tree, not created yet.
 
-Nothing is published there today. Until those addresses exist, an archive received from anywhere else
-is not an official release, and no one becomes an official partner or representative of the product by
-passing one on.
+An official release is an archive published through one of the official channels above — currently the
+Releases page of that repository. An archive received
+from anywhere else is official only as an unmodified copy of an official archive — see
+[Passing on unmodified official archives](#passing-on-unmodified-official-archives). Passing an archive
+on does not make anyone an official partner or representative of the product.
 
 ## Personal use and local changes
 
