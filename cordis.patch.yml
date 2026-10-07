@@ -1,0 +1,3 @@
+- insert:
+    - id: layerpx-agent-viewer
+      name: '@layerpx/harness-agent-viewer'

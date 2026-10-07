@@ -1,0 +1,87 @@
+{
+  "name": "@layerpx/harness-agent-viewer",
+  "version": "0.4.2",
+  "private": true,
+  "type": "module",
+  "description": "Free plugin for DeepSeek Harness to visualize agent teams, delegation, and runs.",
+  "license": "Apache-2.0",
+  "author": "Vitaly Averyanov",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "PROVENANCE.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE",
+    "TRADEMARK.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/RELEASING.md",
+    "docs/VIEWER-ROLES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-api-job-controller"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-session-projection": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-api-session-controller": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-api-job-controller": "0.2.0-rc.2"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "esbuild": "0.25.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "reactflow": "11.11.4",
+    "tsx": "4.19.2",
+    "typescript": "5.9.3",
+    "zod": "4.1.12"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-session-projection": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-conversation": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-api-session-controller": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-api-job-controller": {
+      "optional": true
+    }
+  }
+}
