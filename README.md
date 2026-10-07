@@ -2,6 +2,24 @@
 
 Free plugin for DeepSeek Harness to visualize agent teams, delegation, and runs.
 
+## Public Preview — v0.4.2
+
+Agentic Tree **0.4.2** is published as a **Public Preview** pre-release: [Release v0.4.2](https://github.com/avery-tech/agentic-tree/releases/tag/v0.4.2). The repository is live at https://github.com/avery-tech/agentic-tree. Verified compatibility: **DeepSeek Harness 0.2.0-rc.2 only**; other Harness versions are unverified. The independent installation check of this preview is still pending.
+
+**Download and install v0.4.2.** Open [Release v0.4.2](https://github.com/avery-tech/agentic-tree/releases/tag/v0.4.2) → **Assets** and download both `layerpx-harness-agent-viewer-0.4.2.tgz` and `SHA256SUMS`, then verify the archive:
+
+```sh
+shasum -a 256 -c SHA256SUMS
+```
+
+`SHA256SUMS` expects `27dc75aef1d657155fb88510d2a6b94155786e0d5fd897e3949ffebe0786a5d6`. Install the archive through **Plugins → Add plugin**, selecting the downloaded `.tgz` by its absolute path, or with the Harness-managed CLI:
+
+```sh
+dsh plugin --profile <profile> add /absolute/path/to/layerpx-harness-agent-viewer-0.4.2.tgz
+```
+
+Then restart Harness, open an existing conversation and select **Agentic Tree** beside **Chat** and **Trajectory**. Install the **attached `.tgz` from the release assets** — not the automatic GitHub "Source code" archives, which are source snapshots rather than the installable package. The package keeps `private: true` and is not distributed through the npm registry.
+
 **Agentic Tree** is a standalone free product under the **layerPx** brand. It helps you see the structure of an AI-agent team, delegation relationships, individual runs and their state inside the current Harness session.
 
 It grew out of work on the layerPx planner and uses its visual approach to organizing work: cards, branches and an explorable canvas. Its current capabilities are observation and interactive learning. Launching agents from layerPx and transferring results into layerPx boards are future ideas, not available integrations.
@@ -14,15 +32,15 @@ It grew out of work on the layerPx planner and uses its visual approach to organ
 | Full public name | Agentic Tree by layerPx |
 | Product | Standalone free product under the layerPx brand |
 | Release lead and responsible person for releases | Vitaly Averyanov |
-| Future GitHub repository owner | avery-tech |
+| GitHub repository owner | avery-tech |
 | Comito | A public AI character of layerPx who tells the story of the development and the updates; responsibility for a release rests with Vitaly Averyanov |
 | License | Apache-2.0 for the code of this repository |
 | Legal rights holder | Vitaly Averyanov |
 
-Planned destinations, not announced as live or created:
+Destinations:
 
+- Repository — **live**: https://github.com/avery-tech/agentic-tree
 - Product page — **planned**: https://layerpx.com/agentic-tree
-- Repository — **planned**: https://github.com/avery-tech/agentic-tree
 
 ## Brand and naming
 
@@ -37,9 +55,9 @@ The full rules are in [TRADEMARK.md](TRADEMARK.md).
 
 ## Current version and availability
 
-**Prepared version: v0.4.2 — not published. Verified compatibility: DeepSeek Harness 0.2.0-rc.2 only**, with compatibility checks enabled and no exemptions. Other Harness versions are unverified. The last frozen and installed build is v0.4.1.
+**Current public version: v0.4.2 — Public Preview, marked as a pre-release. Verified compatibility: DeepSeek Harness 0.2.0-rc.2 only**, with compatibility checks enabled and no exemptions. Other Harness versions are unverified. The independent installation check of v0.4.2 is pending; the last build with a completed local installation check is v0.4.1.
 
-The product is preparing for distribution. Builds remain local and private; no public launch, tag, repository creation or publication has happened. The source package keeps `private: true` as a guard against accidental publication; it does not restrict the license. Free pricing does not place the product under an open-source license by itself — the separate License section below states the terms. The plugin needs no additional API key or model connection; it does not change Harness or model-provider charges.
+The v0.4.2 archive is distributed from the release assets above, and the repository and the tag `v0.4.2` are live; the product page is still planned. The source package keeps `private: true` as a guard against accidental publication to the npm registry; it does not restrict the license. Free pricing does not place the product under an open-source license by itself — the separate License section below states the terms. The plugin needs no additional API key or model connection; it does not change Harness or model-provider charges.
 
 The frozen builds v0.1.0–v0.4.1 carry the earlier `license: UNLICENSED` metadata and are left unchanged. The licensing metadata, the brand rules and the version described here take effect in the v0.4.2 build.
 
@@ -129,7 +147,7 @@ Install a package archive through **Plugins → Add plugin**, or the Harness-man
 dsh plugin --profile <profile> add /path/to/layerpx-harness-agent-viewer-0.4.2.tgz
 ```
 
-Use the profile owning the session and wait until its work is idle before restarting Harness. Remove through Plugins or `dsh plugin --profile <profile> remove @layerpx/harness-agent-viewer`. No download location is live yet, so installation uses an archive you built from source or obtained locally; the planned GitHub URL is not yet an installation source. The package keeps `private: true` and is deliberately not distributed through the npm registry. The build and release sequence is in [RELEASING](docs/RELEASING.md).
+Use the profile owning the session and wait until its work is idle before restarting Harness. Remove through Plugins or `dsh plugin --profile <profile> remove @layerpx/harness-agent-viewer`. The attached archive from the [Release v0.4.2](https://github.com/avery-tech/agentic-tree/releases/tag/v0.4.2) assets installs the same way as an archive you built from source; the attached `.tgz` is the installation source, not the automatic GitHub "Source code" archives. The package keeps `private: true` and is deliberately not distributed through the npm registry. The build and release sequence is in [RELEASING](docs/RELEASING.md).
 
 The internal package name **`@layerpx/harness-agent-viewer`**, conversation view id **`layerpx-tree`**, host plugin name **`layerpx-agent-viewer`**, projection **`layerpxObserver`**, storage keys and technical paths remain unchanged.
 
@@ -164,4 +182,4 @@ Details currently lives beside the renderer but is Harness-specific because it a
 - [Release procedure](docs/RELEASING.md): the checks before a release, versioning, packaging, archive verification and tagging.
 - [Changelog](CHANGELOG.md) and [code provenance](PROVENANCE.md): version history, and the origin of the transferred and third-party material.
 
-Planned and not implemented: publishing the product page at https://layerpx.com/agentic-tree, creating the repository, expanded Guide articles, and any integration that launches agents from layerPx or writes results back into its boards.
+Planned and not implemented: publishing the product page at https://layerpx.com/agentic-tree, expanded Guide articles, and any integration that launches agents from layerPx or writes results back into its boards.
