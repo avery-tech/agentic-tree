@@ -24,13 +24,11 @@ Then restart Harness, open an existing conversation and select **Agentic Tree** 
 
 **See how HQ delegates work to Developer and Reviewer.** 
 
-**Watch the 26-second demo**
+**Watch the 29-second Live demo — Agentic Tree for DeepSeek Harness**
 
+https://github.com/user-attachments/assets/0e979303-b840-410e-b093-6c96d5c6229e
 
-
-https://github.com/user-attachments/assets/af0125d5-406d-4a81-8cb5-fc52f7e9c16e
-
-The pictures and the video show **sample (training) data** rendered by the **0.4.2** components: they are not a record of a real session and no model calls are made to display them. Every frame carries the **Demo · Sample data** badge. These files are documentation only and are not part of the installation archive.
+The pictures and the video show **sample (training) data** rendered by the **0.4.2** components: they are not a record of a real session and no model calls are made to display them. Every frame carries the **Demo · Sample data** badge. These files are documentation only and are not part of the installation archive. The video follows 14 sample agents across 24 execution cards, with HQ centered initially and 81% zoom for the recording; the released plugin’s default Live zoom remains 56%.
 
 **Agentic Tree** is a standalone free product under the **layerPx** brand. It helps you see the structure of an AI-agent team, delegation relationships, individual runs and their state inside the current Harness session.
 
