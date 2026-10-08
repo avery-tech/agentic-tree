@@ -22,7 +22,13 @@ Then restart Harness, open an existing conversation and select **Agentic Tree** 
 
 ![Agentic Tree 0.4.2 Team view with sample data: the HQ card is linked by purple delegation lines to a Developer card and a Reviewer card; all three are Running and show elapsed time, a sample model and token totals, with a 1 / 3 complete progress capsule and a Demo · Sample data badge.](docs/media/0.4.2/team.jpg)
 
-**See how HQ delegates work to Developer and Reviewer.** [**Watch the 26-second demo**](docs/media/0.4.2/agentic-tree-0.4.2-demo.mp4)
+**See how HQ delegates work to Developer and Reviewer.** 
+
+**Watch the 26-second demo**
+
+
+
+https://github.com/user-attachments/assets/af0125d5-406d-4a81-8cb5-fc52f7e9c16e
 
 The pictures and the video show **sample (training) data** rendered by the **0.4.2** components: they are not a record of a real session and no model calls are made to display them. Every frame carries the **Demo · Sample data** badge. These files are documentation only and are not part of the installation archive.
 
