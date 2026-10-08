@@ -20,6 +20,12 @@ dsh plugin --profile <profile> add /absolute/path/to/layerpx-harness-agent-viewe
 
 Then restart Harness, open an existing conversation and select **Agentic Tree** beside **Chat** and **Trajectory**. Install the **attached `.tgz` from the release assets** — not the automatic GitHub "Source code" archives, which are source snapshots rather than the installable package. The package keeps `private: true` and is not distributed through the npm registry.
 
+![Agentic Tree 0.4.2 Team view with sample data: the HQ card is linked by purple delegation lines to a Developer card and a Reviewer card; all three are Running and show elapsed time, a sample model and token totals, with a 1 / 3 complete progress capsule and a Demo · Sample data badge.](docs/media/0.4.2/team.jpg)
+
+**See how HQ delegates work to Developer and Reviewer.** [**Watch the 26-second demo**](docs/media/0.4.2/agentic-tree-0.4.2-demo.mp4)
+
+The pictures and the video show **sample (training) data** rendered by the **0.4.2** components: they are not a record of a real session and no model calls are made to display them. Every frame carries the **Demo · Sample data** badge. These files are documentation only and are not part of the installation archive.
+
 **Agentic Tree** is a standalone free product under the **layerPx** brand. It helps you see the structure of an AI-agent team, delegation relationships, individual runs and their state inside the current Harness session.
 
 It grew out of work on the layerPx planner and uses its visual approach to organizing work: cards, branches and an explorable canvas. Its current capabilities are observation and interactive learning. Launching agents from layerPx and transferring results into layerPx boards are future ideas, not available integrations.
@@ -82,6 +88,14 @@ Open an existing conversation and select **Agentic Tree** beside **Chat** and **
 | **Team** | The selected session and its descendant agent sessions, with parent/child delegation links and collapsible branches. |
 | **Work** | Individual native executions, owned background jobs and their state. Repeated runs of an agent appear as separate cards on its lane; the view opens by default. |
 | **Agentic Guide** | Interactive example schemes with explanations: Simple Chat, Duo and Startup. Example data are separate from the current session. |
+
+![Agentic Tree 0.4.2 Work view with sample data: HQ on the left, then Developer and Reviewer run 1 cards marked Completed, followed by their run 2 cards marked Running, joined by delegation lines; zoom, Fit view and Live controls at the bottom right and a Demo · Sample data badge.](docs/media/0.4.2/work.jpg)
+
+**Work** — Follow separate runs, from completed work to the next active step.
+
+![Agentic Guide example 01 Simple Chat: a Main agent card followed by three dashed sequential task cards — 01 Explore, 02 Build, 03 Check — with When, Why these roles and Limit notes below and section buttons for Simple Chat, Duo and Startup.](docs/media/0.4.2/guide.jpg)
+
+**Agentic Guide** — Explore sample agent patterns with roles, tasks and practical limits.
 
 Click a real agent/run card to inspect its assignment, recorded model/preset, status, duration, executions, tool calls and available event input/results. Pan, zoom or use **Fit view**. The root is labeled **HQ (Main agent)** in the Guide; the observed root card uses **HQ**.
 

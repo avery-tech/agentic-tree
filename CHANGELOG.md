@@ -4,9 +4,8 @@ Product versions are independent of the supported Harness version. All releases 
 
 ## Unreleased
 
-Nothing yet. The next work starts here.
-
 - Documentation only, after the 0.4.2 publication: README, `TRADEMARK.md` and this changelog were updated. No code change; `src/`, `tests/`, `locale/` and `cordis.patch.yml` are untouched.
+- Add the prepared 0.4.2 media to the public README from `docs/media/0.4.2/`: the Team view as the main screenshot with the caption "See how HQ delegates work to Developer and Reviewer." and a link to the 26-second demo video, plus the Work and Agentic Guide views in the "Three views" section, every image with a descriptive alt text. The README states that these visuals show **sample (training) data** of the 0.4.2 components — not a real session — and that displaying them makes no model calls; the "Demo · Sample data" badge is visible in every frame. The media are documentation only and are **not part of the installation archive**: `files` in `package.json` stays explicit and unchanged without `docs/media`. No code change.
 
 ## 0.4.2 — 2026-10-07
 
